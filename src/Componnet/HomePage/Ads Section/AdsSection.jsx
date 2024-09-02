@@ -1,6 +1,7 @@
 import adsOne from '../../../assets/img/Ads/Ad_1.jpg'
 import adsTwo from '../../../assets/img/Ads/saleImgThree----.webp'
 import adsThree from '../../../assets/img/Ads/Ad_3.jpg'
+import { NavLink } from 'react-router-dom';
 
 const AdsSection = () => {
     return (
@@ -8,12 +9,18 @@ const AdsSection = () => {
             {/* ads left part*/}
             <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
                 <div>
-                    <img src={adsOne} alt="" className='w-full'/>
+                    <NavLink to='/shop'>
+                        <img src={adsOne} alt="" />
+                    </NavLink>
                 </div>
                 {/* ads right part */}
                 <div className='flex flex-col justify-between gap-5'>
-                    <img src={adsThree} alt="" />
-                    <img src={adsTwo} alt="" />
+                    <NavLink to='/shop'>
+                        <img src={adsThree} alt="" />
+                    </NavLink>
+                    <NavLink to='/shop'>
+                        <img src={adsTwo} alt="" />
+                    </NavLink>
                 </div>
             </div>
         </div>

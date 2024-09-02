@@ -124,9 +124,6 @@ const Banner = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <img src={bannerImg} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
                         <img src={bannerImg2} alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -134,6 +131,9 @@ const Banner = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={bannerImg2} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={bannerImg} alt="" />
                     </SwiperSlide>
 
                 </Swiper>
