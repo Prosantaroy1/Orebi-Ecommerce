@@ -6,9 +6,9 @@ import { IoLogoYoutube } from "react-icons/io5";
 const Footer = () => {
     return (
         <>
-            <div className="bg-[#f5f5f5] py-28">
+            <div className="bg-[#f5f5f5] md:px-0 px-3 py-28">
                 <div className="container mx-auto">
-                    <footer className="footer  text-base-content p-10">
+                    <footer className="footer  text-base-content py-10">
                         <aside>
                             <h3 className="font-fontAb font-semibold text-2xl">
                                 More about Orebi Shop
