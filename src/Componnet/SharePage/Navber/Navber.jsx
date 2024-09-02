@@ -5,7 +5,7 @@ const Navber = () => {
     return (
         <>
             {/* nav top */}
-            <div className="bg-[#ffffff] shadow sticky top-0 left-0  ">
+            <div className="bg-[#ffffff]  shadow">
                 <div className="container md:px-0 px-3 flex justify-between items-center mx-auto py-6">
                     {/* nav logo */}
                     <h3 className="md:text-3xl text-xl font-fontAb font-semibold">TP SHOP</h3>
@@ -16,7 +16,7 @@ const Navber = () => {
                             <li className="px-2 border-r-4 border-black"><NavLink to='/shop'>Store</NavLink></li>
                             <li className="px-2 border-r-4 border-black"><NavLink to='/about'>About</NavLink></li>
                             <li className="px-2 border-r-4 border-black"><NavLink to='/contact'>Contacts</NavLink></li>
-                            <li><NavLink to='/'>Journal</NavLink></li>
+                            <li><NavLink to='/journals'>Journal</NavLink></li>
 
                         </ul>
                     </div>

@@ -5,6 +5,7 @@ import Errorpage from "../Componnet/ErrorPage/Errorpage";
 import ShopSec from "../Componnet/ShopPage/Shop Sec/ShopSec";
 import Aboutpage from "../Componnet/AboutPage/Aboutpage";
 import Contact from "../Componnet/ContactPage/Contact";
+import Journal from "../Componnet/JournalPage/Journal";
 
 
 const router = createBrowserRouter([
@@ -28,7 +29,12 @@ const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact/>
+            },
+            {
+                path: '/journals',
+                element: <Journal/>
             }
+
         ]
     }
 ])
