@@ -1,6 +1,7 @@
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MdOutlineMan2 } from "react-icons/md";
 import bannerImg from '../../../assets/img/Banner/Group 10.jpg'
+import bannerImg2 from '../../../assets/img/Banner/bannerImgTwo.webp'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,21 +11,22 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { NavLink } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="bg-slate-50 py-5 relative">
+        <div className="bg-slate-50 py-5 md:px-0 px-3 relative">
             {/* banner header */}
             <div className="bg-slate-50 py-5">
-                <div className="container mx-auto flex justify-between items-center">
+                <div className="container mx-auto flex justify-between gap-5 items-center">
                     {/* banner left header*/}
                     <div className="flex items-center gap-3">
                         {/* left fast */}
                         <div className="dropdown dropdown-bottom">
                             <div tabIndex={0} role="button" className="btn bg-white m-1">
-                                <FaBarsStaggered className="text-xl" />
+                                <FaBarsStaggered className="md:text-xl" />
                             </div>
-                            <ul tabIndex={0} className="dropdown-content absolute top-0 left-0 menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                            <ul tabIndex={0} className="dropdown-content z-30 absolute top-0 left-0 menu bg-base-100 rounded-box  w-52 p-2 shadow">
                                 <li><a>Item 1</a></li>
                                 <li><a>Item 2</a></li>
                                 <li><a>Item 1</a></li>
@@ -38,7 +40,7 @@ const Banner = () => {
                     </div>
                     {/* banner middle header*/}
                     <div>
-                        <label className="input input-bordered flex items-center gap-2">
+                        <label className="input input-bordered hidden md:flex items-center gap-2">
                             <input type="text" className="grow w-[550px]" placeholder="Search Product" />
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -55,23 +57,21 @@ const Banner = () => {
                     {/* banner last header */}
                     <div>
                         <div className="flex items-center">
+                            {/* login part */}
                             <div className="dropdown dropdown-end">
-                                <div tabIndex={0} role="button" className="btn btn-ghost flex items-center justify-center btn-circle avatar">
-                                    <div className="w-10 rounded-full flex items-center justify-center h-10">
-                                        <MdOutlineMan2 className="text-4xl" />
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                    <div className="indicator">
+                                        <MdOutlineMan2 className="md:text-4xl text-2xl" />
                                     </div>
                                 </div>
-                                <ul
+                                <div
                                     tabIndex={0}
-                                    className="menu menu-sm dropdown-content py-6 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                    <li>
-                                        <a className="justify-between">
-                                            Login
-                                        </a>
-                                    </li>
-                                    <li><a>Register</a></li>
-
-                                </ul>
+                                    className="card card-compact dropdown-content bg-base-100 z-30 mt-3 w-52 shadow">
+                                    <div className="card-body flex flex-col gap-3">
+                                        <NavLink className='hover:bg-black py-3 px-2 rounded hover:text-white' to='#'>Login</NavLink>
+                                        <NavLink className='hover:bg-black py-3 px-2 rounded hover:text-white' to='#'>Register</NavLink>
+                                    </div>
+                                </div>
                             </div>
                             {/* cart */}
                             <div className="dropdown dropdown-end">
@@ -79,7 +79,7 @@ const Banner = () => {
                                     <div className="indicator">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="h-8 w-9"
+                                            className="md:h-8 h-5 md:w-9 w-5"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor">
@@ -94,7 +94,7 @@ const Banner = () => {
                                 </div>
                                 <div
                                     tabIndex={0}
-                                    className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                                    className="card card-compact dropdown-content bg-base-100 z-30 mt-3 w-52 shadow">
                                     <div className="card-body">
                                         <span className="text-lg font-bold">8 Items</span>
                                         <span className="text-info">Subtotal: $999</span>
@@ -109,7 +109,7 @@ const Banner = () => {
                 </div>
             </div>
             {/* banner slider */}
-            <div className="container  mx-auto">
+            <div className="md:container pt-5  md:mx-auto">
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -124,21 +124,18 @@ const Banner = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <img src={bannerImg} alt=""/>
+                        <img src={bannerImg} alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={bannerImg2} alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img src={bannerImg} alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={bannerImg} alt="" />
+                        <img src={bannerImg2} alt="" />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={bannerImg} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={bannerImg} alt="" />
-                    </SwiperSlide>
-                    
+
                 </Swiper>
             </div>
         </div>
