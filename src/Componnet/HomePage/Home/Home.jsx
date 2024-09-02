@@ -1,3 +1,4 @@
+import AdsSection from "../Ads Section/AdsSection";
 import Banner from "../Banner/Banner";
 import Information from "../Information/Information";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Banner/>
             <Information/>
+            <AdsSection/>
         </div>
     );
 };
