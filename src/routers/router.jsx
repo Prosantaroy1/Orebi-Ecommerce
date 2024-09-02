@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import Home from "../Componnet/HomePage/Home/Home";
 import Errorpage from "../Componnet/ErrorPage/Errorpage";
 import ShopSec from "../Componnet/ShopPage/Shop Sec/ShopSec";
+import Aboutpage from "../Componnet/AboutPage/Aboutpage";
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             {
                 path: '/shop',
                 element:<ShopSec/>
+            },
+            {
+                path: '/about',
+                element:<Aboutpage/>
             }
         ]
     }
