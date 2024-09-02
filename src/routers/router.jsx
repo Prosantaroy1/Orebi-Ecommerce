@@ -6,6 +6,8 @@ import ShopSec from "../Componnet/ShopPage/Shop Sec/ShopSec";
 import Aboutpage from "../Componnet/AboutPage/Aboutpage";
 import Contact from "../Componnet/ContactPage/Contact";
 import Journal from "../Componnet/JournalPage/Journal";
+import LoginPage from "../Componnet/LoginPage/LoginPage";
+import RegisterPage from "../Componnet/RegisterPage/RegisterPage";
 
 
 const router = createBrowserRouter([
@@ -36,7 +38,16 @@ const router = createBrowserRouter([
             }
 
         ]
+    },
+    {
+        path: '/login',
+        element: <LoginPage/>
+    },
+    {
+        path: '/register',
+        element: <RegisterPage/>
     }
+
 ])
 
 export default router;
