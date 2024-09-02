@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { NavLink } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+// import imgLoca from '../../assets/img/all/Image.png'
 
 const Contact = () => {
 
@@ -25,7 +26,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="container md:px-1 px-4 mb-6 mx-auto py-12">
+        <div className="container md:px-1 px-4  mx-auto py-12">
             {/* conact first */}
             <h3 className="font-fontAb font-semibold text-3xl">Contacts</h3>
             {/* link */}
@@ -58,6 +59,11 @@ const Contact = () => {
                         <input type="submit" value="Send" className="btn bg-black hover:text-black text-xl text-white btn-wide" />
                     </div>
                 </form>
+            </div>
+            {/* location */}
+            <div className='pt-12'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d233666.68434625547!2d90.25487108783672!3d23.781520713653677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCreative%20IT%20Institute%2C!5e0!3m2!1sen!2sbd!4v1725309063364!5m2!1sen!2sbd" width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     );
