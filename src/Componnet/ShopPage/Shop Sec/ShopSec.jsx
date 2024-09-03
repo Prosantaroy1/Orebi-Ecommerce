@@ -1,19 +1,21 @@
 import { NavLink } from "react-router-dom";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import ProductCard from "../Product Card/ProductCard";
+import { MdWindow } from "react-icons/md";
+import { TfiMenuAlt } from "react-icons/tfi";
 
 
 const ShopSec = () => {
     // 
-    const [products, setProducts]= useState([]);
+    const [products, setProducts] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('product.json')
-        .then(res=> res.json())
-        .then(data=>{
-            setProducts(data)
-        })
-    },[])
+            .then(res => res.json())
+            .then(data => {
+                setProducts(data)
+            })
+    }, [])
 
     // console.log(products)
 
@@ -31,14 +33,14 @@ const ShopSec = () => {
                 </div>
             </div>
             {/*product*/}
-            <div className="pt-6">
+            <div className="pt-16">
                 <div className="grid items-start grid-cols-4 gap-5">
                     {/* left part */}
-                    <div className="pt-12 h-screen ">
+                    <div className="h-screen ">
                         {/* categroy */}
                         <div className="font-fontAb">
-                            <h4 className="font-semibold text-xl">Shop by Category</h4>
-                            <ul className="flex flex-col gap-2 pt-3 ">
+                            <h4 className="font-semibold text-2xl">Shop by Category</h4>
+                            <ul className="flex flex-col text-xl gap-2 pt-3 ">
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">encre</li>
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">Ruban</li>
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">imprimante</li>
@@ -47,8 +49,8 @@ const ShopSec = () => {
                         </div>
                         {/* price filter */}
                         <div className="font-fontAb pt-6 pb-5">
-                            <h4 className="font-semibold text-xl">Shop by Price</h4>
-                            <ul className="flex flex-col gap-5 pt-3">
+                            <h4 className="font-semibold text-2xl">Shop by Price</h4>
+                            <ul className="flex flex-col text-xl gap-5 pt-3">
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">1-50</li>
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">50-100</li>
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">100-200</li>
@@ -57,8 +59,8 @@ const ShopSec = () => {
                         </div>
                         {/* color filter */}
                         <div className="font-fontAb">
-                            <h4 className="font-semibold text-xl">Shop by Color</h4>
-                            <ul className="flex flex-col gap-5 pt-3 px-2">
+                            <h4 className="font-semibold text-2xl">Shop by Color</h4>
+                            <ul className="flex flex-col text-xl gap-5 pt-3 px-2">
                                 <li className="flex items-center gap-2"><input type="radio" name="radio-8" className="radio radio-error" />red</li>
                                 <li className="flex items-center gap-2"> <input type="radio" name="radio-8" className="radio checked:bg-blue-600" />Blue</li>
                                 <li className="flex items-center gap-2"> <input type="radio" name="radio-8" className="radio checked:bg-green-600" />Green</li>
@@ -68,11 +70,27 @@ const ShopSec = () => {
                     </div>
                     {/* right part */}
                     <div className="col-span-3 h-auto">
+                        <div className="flex mb-8 items-center justify-between font-fontAb">
+                            <div className="flex items-center gap-5">
+                                <MdWindow className="text-3xl" />
+                                <TfiMenuAlt className="text-3xl" />
+                            </div>
+                            <div className="flex items-center gap-5">
+                                <h4 className="font-medium text-xl">Sort by :</h4>
+                                <select className="select select-bordered ">
+                                    <option disabled selected>Featured</option>
+                                    <option>Short</option>
+                                    <option>meduim</option>
+                                    <option>large</option>
+                                </select>
+                            </div>
+                        </div>
+                        {/* product */}
                         <div className="grid grid-cols-3 gap-12">
                             {
-                                products.map((item,id)=><ProductCard
-                                key={id}
-                                item={item}
+                                products.map((item, id) => <ProductCard
+                                    key={id}
+                                    item={item}
                                 ></ProductCard>)
                             }
                         </div>

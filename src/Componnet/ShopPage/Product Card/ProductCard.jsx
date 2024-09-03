@@ -5,11 +5,11 @@ const ProductCard = ({ item }) => {
     console.log(item)
     return (
         <div>
-            <div className="card relative card-compact bg-base-100 w-96 shadow-xl">
+            <div className="card relative card-compact bg-base-100 w-96 shadow">
                 <figure>
                     <img
                         src={img}
-                        alt="Shoes" className='h-60 w-full' />
+                        alt="Shoes" className='h-64 w-full' />
 
                 </figure>
                 {/* new */}
