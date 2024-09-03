@@ -1,0 +1,202 @@
+[
+    {
+        "id": 201,
+        "img": "./img/imprimante1.png",
+        "category": "imprimante",
+        "price": 35.00,
+        "color": "Blank and White",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "imprimante product"
+      },
+      {
+        "id": 202,
+        "img": "./img/imprimante2.png",
+        "category": "imprimante",
+        "price": 180.00,
+        "color": "Gray",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "imprimante Two"
+      },
+      {
+        "id": 203,
+        "img": "./img/imprimante3.png",
+        "category": "imprimante",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "imprimante Product"
+      },
+      {
+        "id": 204,
+        "img": "./img/imprimante4.png",
+        "category": "imprimante",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Missin Product"
+      },
+      {
+        "id": 205,
+        "img": "./img/imprimante7.png",
+        "category": "imprimante",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Brand Product"
+      },
+      {
+        "id": 206,
+        "img": "./img/imprimante9.png",
+        "category": "imprimante",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "imprimante Product"
+      },
+      {
+        "id": 207,
+        "img": "./img/imprimante6.png",
+        "category": "imprimante",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "imprimante Brand"
+      },
+      {
+        "id": 208,
+        "img": "./img/imprimante8.png",
+        "category": "imprimante",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "New imprimante"
+      },
+      {
+        "id": 209,
+        "img": "./img/encre1.png",
+        "category": "encre",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "ancre Brand"
+      },
+      {
+        "id": 210,
+        "img": "./img/encre2.png",
+        "category": "encre",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Product ancre"
+      },
+      {
+        "id": 211,
+        "img": "./img/encre3.png",
+        "category": "encre",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "ancre"
+      },
+      {
+        "id": 212,
+        "img": "./img/encre4.png",
+        "category": "encre",
+        "price":220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "ancre Product"
+      },
+      {
+        "id": 213,
+        "img": "./img/ruban1.png",
+        "category": "Ruban",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "New Ruban"
+      },
+      {
+        "id": 214,
+        "img": "./img/ruban2.png",
+        "category": "Ruban",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Ruban Product"
+      },
+      {
+        "id": 215,
+        "img": "./img/ruban3.png",
+        "category": "Ruban",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "brand Ruban"
+      },
+      {
+        "id": 216,
+        "img": "./img/ruban1.png",
+        "category": "Ruban",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Ruban Product"
+      },
+      {
+        "id": 217,
+        "img": "./img/bac1.png",
+        "category": "Bac de dechet",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Brand Bac"
+      },
+      {
+        "id": 219,
+        "img": "./img/bac2.png",
+        "category": "Bac de dechet",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Bac Product"
+      },
+      {
+        "id": 220,
+        "img": "./img/bac3.png",
+        "category": "Bac de dechet",
+        "price": 25.00,
+        "color": "Mixed",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "New Bac"
+      },
+      {
+        "id": 221,
+        "img": "./img/bac2.png",
+        "category": "Bac de dechet",
+        "price": 220.00,
+        "color": "Black",
+        "badge": true,
+        "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+        "name": "Bac Product"
+      }
+]

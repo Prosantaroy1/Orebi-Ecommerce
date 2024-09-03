@@ -16,7 +16,7 @@ const Main = () => {
                     <h3 className="text-2xl font-fontAb font-medium">Call Now</h3>
                 </div> */}
                 {/* Open the modal using document.getElementById('ID').showModal() method */}
-                <button className="btn bg-orange-500 text-white" onClick={() => document.getElementById('my_modal_2').showModal()}>
+                <button className="btn z-30 bg-orange-500 text-white" onClick={() => document.getElementById('my_modal_2').showModal()}>
                     <div className="flex items-center gap-3">
                         <IoCallOutline className="text-2xl" />
                         <h3 className="text-xl font-fontAb font-medium">Call Now</h3>
