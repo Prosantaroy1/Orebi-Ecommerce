@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import ProductCard from "../Product Card/ProductCard";
 import { MdWindow } from "react-icons/md";
 import { TfiMenuAlt } from "react-icons/tfi";
+import PagitionBar from "../../pagitionBar/pagitionBar";
 
 
 const ShopSec = () => {
@@ -16,9 +17,16 @@ const ShopSec = () => {
                 setProducts(data)
             })
     }, [])
-
-    // console.log(products)
-
+    // pagetion
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postPerPage] = useState(5);
+    //two
+    const lastIndex = postPerPage * currentPage;
+    const firstIndex = lastIndex - postPerPage;
+    //three
+    const PostProducts = products.slice(firstIndex, lastIndex);
+    // four
+    const pagitions = (number) => setCurrentPage(number);
     return (
         <div className="py-16 container mx-auto">
             {/* brand */}
@@ -36,7 +44,7 @@ const ShopSec = () => {
             <div className="pt-16">
                 <div className="grid items-start grid-cols-4 gap-5">
                     {/* left part */}
-                    <div className="h-screen ">
+                    <div className="h-screen md:block hidden">
                         {/* categroy */}
                         <div className="font-fontAb">
                             <h4 className="font-semibold text-2xl">Shop by Category</h4>
@@ -86,14 +94,20 @@ const ShopSec = () => {
                             </div>
                         </div>
                         {/* product */}
-                        <div className="grid grid-cols-3 gap-12">
+                        <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 items-center mb-5 gap-24">
                             {
-                                products.map((item, id) => <ProductCard
+                                PostProducts.map((item, id) => <ProductCard
                                     key={id}
                                     item={item}
                                 ></ProductCard>)
                             }
                         </div>
+                        {/* pagition bar */}
+                        <PagitionBar
+                            postPerPage={postPerPage}
+                            totalPost={products.length}
+                            pagition={pagitions}
+                        ></PagitionBar>
                     </div>
                 </div>
             </div>
