@@ -1,12 +1,19 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { deleteItem } from "../../../redux/cartSlice";
 
 const CartPage = () => {
     // 
     const { cart } = useSelector((state) => state.allData);
     // total
-    const total=cart.reduce((sum, totals)=> totals.price + sum , 0)
-    console.log(total)
+    const total = cart.reduce((sum, totals) => totals.price + sum, 0)
+    // delete
+    const dispatch= useDispatch();
+    // delete
+    const handledelete=id=>{
+        console.log(id)
+        dispatch(deleteItem(id))
+    }
 
     return (
         <div className="container mx-auto py-16">
@@ -36,9 +43,9 @@ const CartPage = () => {
                             {
                                 cart.map((item) => <tr key={item.id}>
                                     <th>
-                                        <label>
+                                        <button onClick={()=>handledelete(item.id)}>
                                             X
-                                        </label>
+                                        </button>
                                     </th>
                                     <td>
                                         <div className="flex items-center gap-3">
@@ -77,10 +84,13 @@ const CartPage = () => {
                             <th class="border px-16 py-3 border-slate-300 text-xl ...">Total: </th>
                             <td class="border px-16 border-slate-300 text-xl ...">${total}</td>
                         </tr>
-                       
+
                     </tbody>
                 </table>
-                <button className="bg-black text-xl text-white hover:text-black border font-fontAb font-semibold px-4 py-2 hover:bg-white">Process CheekOut</button>
+                <NavLink to='/cheekout'>
+                    <button className="bg-black text-xl text-white hover:text-black border font-fontAb font-semibold px-4 py-2 hover:bg-white">
+                        Process CheekOut</button>
+                </NavLink>
             </div>
         </div>
     );

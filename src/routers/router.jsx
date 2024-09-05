@@ -9,6 +9,7 @@ import Journal from "../Componnet/JournalPage/Journal";
 import LoginPage from "../Componnet/LoginPage/LoginPage";
 import RegisterPage from "../Componnet/RegisterPage/RegisterPage";
 import CartPage from "../Componnet/HomePage/CartPage/CartPage";
+import ProcessCheek from "../Componnet/HomePage/Process CheekOut/ProcessCheek";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: '/journals',
                 element: <Journal/>
+            },
+            {
+                path: '/cheekout',
+                element:<ProcessCheek/>
             }
 
         ]
