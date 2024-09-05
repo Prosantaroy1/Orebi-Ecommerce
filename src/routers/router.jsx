@@ -8,6 +8,7 @@ import Contact from "../Componnet/ContactPage/Contact";
 import Journal from "../Componnet/JournalPage/Journal";
 import LoginPage from "../Componnet/LoginPage/LoginPage";
 import RegisterPage from "../Componnet/RegisterPage/RegisterPage";
+import CartPage from "../Componnet/HomePage/CartPage/CartPage";
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element:<Aboutpage/>
+            },
+            {
+                path: '/cart',
+                element: <CartPage/>
             },
             {
                 path: '/contact',

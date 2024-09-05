@@ -1,13 +1,15 @@
 import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 import { MdOutlineMan2 } from "react-icons/md";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 const Navber = () => {
+    const {cart}= useSelector((state)=>state.allData)
     return (
         <>
             {/* nav top */}
-            <div className="bg-[#ffffff]  shadow">
-                <div className="container md:px-0 px-3 flex justify-between items-center mx-auto py-6">
+            <div className="bg-[#ffffff] md:px-2 px-3 shadow">
+                <div className="container  flex justify-between items-center mx-auto py-6">
                     {/* nav logo */}
                     <h3 className="md:text-3xl text-xl font-fontAb font-semibold">TP SHOP</h3>
                     {/* navlink */}
@@ -51,7 +53,7 @@ const Navber = () => {
                         </div>
                         {/* banner middle header*/}
                         <div>
-                            <label className="input input-bordered hidden md:flex items-center gap-2">
+                            <label className="input input-bordered hidden lg:flex items-center gap-2">
                                 <input type="text" className="grow w-[550px]" placeholder="Search Product" />
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -100,17 +102,18 @@ const Navber = () => {
                                                     strokeWidth="2"
                                                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                                             </svg>
-                                            <span className="badge badge-sm indicator-item">8</span>
+                                            <span className="badge text-xl text-red-500 font-semibold badge-sm indicator-item">{cart.length}</span>
                                         </div>
                                     </div>
                                     <div
                                         tabIndex={0}
                                         className="card card-compact dropdown-content bg-base-100 z-30 mt-3 w-52 shadow">
                                         <div className="card-body">
-                                            <span className="text-lg font-bold">8 Items</span>
-                                            <span className="text-info">Subtotal: $999</span>
+                                            <span className="text-lg font-bold">{cart.length} Items</span>
                                             <div className="card-actions">
-                                                <button className="btn btn-primary btn-block">View cart</button>
+                                                <NavLink to='/cart' className='w-full'>
+                                                   <button  className="btn btn-primary btn-block">View cart</button>
+                                                </NavLink>
                                             </div>
                                         </div>
                                     </div>

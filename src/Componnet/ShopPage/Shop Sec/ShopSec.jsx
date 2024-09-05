@@ -28,7 +28,7 @@ const ShopSec = () => {
     // four
     const pagitions = (number) => setCurrentPage(number);
     return (
-        <div className="py-16 container mx-auto">
+        <div className="py-16 px-2 container mx-auto">
             {/* brand */}
             <div>
                 <h3 className="font-fontAb font-semibold text-3xl">Store Products</h3>
@@ -47,7 +47,7 @@ const ShopSec = () => {
                     <div className="h-screen md:block hidden">
                         {/* categroy */}
                         <div className="font-fontAb">
-                            <h4 className="font-semibold text-2xl">Shop by Category</h4>
+                            <h4 className="font-semibold text-xl lg::text-2xl">Shop by Category</h4>
                             <ul className="flex flex-col text-xl gap-2 pt-3 ">
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">encre</li>
                                 <li className="hover:bg-black hover:text-white  py-2 px-3 rounded">Ruban</li>
@@ -77,7 +77,7 @@ const ShopSec = () => {
                         </div>
                     </div>
                     {/* right part */}
-                    <div className="col-span-3 h-auto">
+                    <div className="md:col-span-3 col-span-4 h-auto">
                         <div className="flex mb-8 items-center justify-between font-fontAb">
                             <div className="flex items-center gap-5">
                                 <MdWindow className="text-3xl" />

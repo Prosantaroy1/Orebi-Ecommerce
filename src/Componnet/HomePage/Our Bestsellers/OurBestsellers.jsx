@@ -19,7 +19,7 @@ const OurBestsellers = () => {
             <div>
                 <h3 className="text-4xl md:px-1 px-5 font-fontAb font-medium">Our Bestsellers</h3>
             </div>
-            <div className="grid md:grid-cols-4  grid-cols-1  pt-12 gap-14 items-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  grid-cols-1  pt-12 gap-14 items-center">
                 {
                     bestFilter.map((item,id)=><ProductCard
                      key={id}

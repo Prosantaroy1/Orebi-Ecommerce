@@ -19,7 +19,7 @@ const PagitionBar = ({ postPerPage, totalPost,pagition }) => {
         <div>
             <ul className="flex items-center gap-3">
                 {
-                    pageNumber.map((number) =><li onClick={()=>{handleClick(number); pagition=(number)}} className={` cursor-pointer ${active===number ? "bg-red-600 text-2xl p-3 rounded text-black": " text-2xl p-3"}`}>
+                    pageNumber.map((number,idx) =><li key={idx} onClick={()=>{handleClick(number); pagition=(number)}} className={` cursor-pointer ${active===number ? "bg-red-600 text-2xl p-3 rounded text-black": " text-2xl p-3"}`}>
                         {number}
                     </li>)
                     
