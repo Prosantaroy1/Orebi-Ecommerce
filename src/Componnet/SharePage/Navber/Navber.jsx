@@ -1,17 +1,36 @@
+import { useContext, useState } from "react";
 import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 import { MdOutlineMan2 } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
+import { IoMdClose } from "react-icons/io";
 
 const Navber = () => {
-    const {cart}= useSelector((state)=>state.allData)
+    const { cart } = useSelector((state) => state.allData)
+    // 
+    const { user, logout } = useContext(AuthContext);
+    // logout
+    const logOut = () => {
+        logout()
+            .then(result => {
+                const user = result.user
+            })
+    }
+    // state
+    const [open, setOpen] = useState(false);
+    const toggolAdd = () => {
+        setOpen(!open)
+    }
+    console.log(open)
+
     return (
         <>
             {/* nav top */}
-            <div className="bg-[#ffffff] md:px-2 px-3 shadow">
+            <div className="bg-[#ffffff] relative md:px-2 px-3 shadow">
                 <div className="container  flex justify-between items-center mx-auto py-6">
                     {/* nav logo */}
-                    <h3 className="md:text-3xl text-xl font-fontAb font-semibold">TP SHOP</h3>
+                    <h3 className="lg:text-3xl text-xl md:text-2xl font-fontAb font-semibold">TP SHOP</h3>
                     {/* navlink */}
                     <div>
                         <ul className="md:flex  hidden items-center gap-7 text-xl font-fontAb font-medium">
@@ -20,15 +39,29 @@ const Navber = () => {
                             <li className="px-2 border-r-4 border-black"><NavLink to='/about'>About</NavLink></li>
                             <li className="px-2 border-r-4 border-black"><NavLink to='/contact'>Contacts</NavLink></li>
                             <li><NavLink to='/journals'>Journal</NavLink></li>
-
                         </ul>
                     </div>
                     {/* responsive */}
-                    <div className="block md:hidden">
-                        <FaBars className="text-2xl" />
+                    <div onClick={toggolAdd} className="block md:hidden">
+                        {
+                            open ? <IoMdClose className='text-2xl' /> : <FaBars className="text-2xl" />
+                        }
                     </div>
                 </div>
-                {/* second nav */}
+                {/* responsive moblie*/}
+                {
+                    open && <div className={`bg-black z-50 transition-all duration-100  text-white py-8 absolute top-16 left-0 w-full h-screen`}>
+                        <div>
+                            <ul className="md:hidden opacity-100  flex flex-col items-center gap-7 text-xl font-fontAb font-medium">
+                                <li className="px-2 border-r-4 border-black"><NavLink to='/'>Home</NavLink></li>
+                                <li className="px-2 border-r-4 border-black"><NavLink to='/shop'>Store</NavLink></li>
+                                <li className="px-2 border-r-4 border-black"><NavLink to='/about'>About</NavLink></li>
+                                <li className="px-2 border-r-4 border-black"><NavLink to='/contact'>Contacts</NavLink></li>
+                                <li><NavLink to='/journals'>Journal</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
+                }
                 {/* banner header */}
                 <div className="bg-slate-50 py-5">
                     <div className="container mx-auto flex justify-between gap-5 items-center">
@@ -80,10 +113,19 @@ const Navber = () => {
                                     <div
                                         tabIndex={0}
                                         className="card card-compact dropdown-content bg-base-100 z-30 mt-3 w-52 shadow">
-                                        <div className="card-body flex flex-col gap-3">
-                                            <NavLink to='/login' className='hover:bg-black py-3 font-fontAb text-xl px-2 rounded hover:text-white' >Login</NavLink>
-                                            <NavLink to='/register' className='hover:bg-black py-3 px-2 rounded font-fontAb text-xl hover:text-white'>Register</NavLink>
-                                        </div>
+                                        {
+                                            user ?
+                                                <div className="card-body flex flex-col gap-3">
+                                                    <NavLink className='hover:bg-black py-3 font-fontAb text-xl px-2 rounded hover:text-white' >Profile</NavLink>
+                                                    <NavLink onClick={logOut} className='hover:bg-black py-3 font-fontAb text-xl px-2 rounded hover:text-white' >LogOut</NavLink>
+                                                </div>
+                                                :
+                                                <div className="card-body flex flex-col gap-3">
+                                                    <NavLink to='/login' className='hover:bg-black py-3 font-fontAb text-xl px-2 rounded hover:text-white' >Login</NavLink>
+                                                    <NavLink to='/register' className='hover:bg-black py-3 px-2 rounded font-fontAb text-xl hover:text-white'>Register</NavLink>
+                                                </div>
+                                        }
+
                                     </div>
                                 </div>
                                 {/* cart */}
@@ -112,7 +154,7 @@ const Navber = () => {
                                             <span className="text-lg font-bold">{cart.length} Items</span>
                                             <div className="card-actions">
                                                 <NavLink to='/cart' className='w-full'>
-                                                   <button  className="btn btn-primary btn-block">View cart</button>
+                                                    <button className="btn btn-primary btn-block">View cart</button>
                                                 </NavLink>
                                             </div>
                                         </div>

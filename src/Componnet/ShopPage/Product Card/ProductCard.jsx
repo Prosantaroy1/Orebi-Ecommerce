@@ -4,24 +4,44 @@ import { TbListDetails } from "react-icons/tb";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../redux/cartSlice";
 import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
     //
     const { name, img, price } = item;
     // user cheek
-    
-
+    const { user } = useContext(AuthContext);
+    // 
+    const navigate=useNavigate();
     //add item
     const dispatch = useDispatch();
     const handleAdd = item => {
-        dispatch(addItem(item))
-        Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "Add to Product",
-            showConfirmButton: false,
-            timer: 1500
-          });
+        if (user) {
+            dispatch(addItem(item))
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Add to Product",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+        else{
+            Swal.fire({
+                title: "Product add To Before Login?",      
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Login"
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  navigate('/login')
+                }
+              });
+        }
     }
 
     return (
