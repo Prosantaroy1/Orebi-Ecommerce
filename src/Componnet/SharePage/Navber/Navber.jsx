@@ -22,7 +22,7 @@ const Navber = () => {
     const toggolAdd = () => {
         setOpen(!open)
     }
-    console.log(open)
+   
 
     return (
         <>
