@@ -1,7 +1,34 @@
+import { useContext } from "react";
 import { TiTick } from "react-icons/ti";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const LoginPage = () => {
+
+    const {signInUser}=useContext(AuthContext);
+    // nagigate
+    const navigate= useNavigate();
+    // 
+    const handleLogin=(e)=>{
+        e.preventDefault();
+        const from= e.target;
+        const email=from.email.value;
+        const password=from.password.value;
+        // 
+        signInUser(email, password)
+        .then(result=>{
+            const user=result.user;
+            console.log(user);
+            navigate('/')
+            Swal.fire("Successfully Login");
+        })
+        .then(error=>{
+            console.log(error);
+        })
+
+    }
+
     return (
         <div className="grid grid-cols-3 gap-2">
             {/* Login left */}
@@ -58,7 +85,7 @@ const LoginPage = () => {
             </div>
             {/* Login right */}
             <div className=" flex justify-center h-screen items-center col-span-3 md:col-span-2">
-                <form>
+                <form onSubmit={handleLogin}>
                     <h4 className="font-fontAb font-semibold text-5xl">Login</h4>
                     <div className="flex pt-4 flex-col gap-4">
                         <label className="text-xl font-fontAb font-semibold">Email</label>
@@ -67,7 +94,7 @@ const LoginPage = () => {
                     {/* email */}
                     <div className="flex pt-5 flex-col gap-4">
                         <label className="text-xl font-fontAb font-semibold">Password</label>
-                        <input type="password" name="email" className="border border-b-slate-400 w-full md:w-[400px] p-4 font-fontAb font-medium" placeholder="Enter your password?" />
+                        <input type="password" name="password" className="border border-b-slate-400 w-full md:w-[400px] p-4 font-fontAb font-medium" placeholder="Enter your password?" />
                     </div>
                     {/* btn */}
                     <div className="pt-6">

@@ -1,7 +1,34 @@
+import { useContext } from "react";
 import { TiTick } from "react-icons/ti";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const RegisterPage = () => {
+    // 
+    const{ signUpUser }=useContext(AuthContext); 
+    // 
+    const navigate= useNavigate();
+   
+    const handleRegister=e=>{
+        e.preventDefault();
+        const from=e.target;
+        const name= from.name.value;
+        const email= from.email.value;
+        const password=from.password.value;
+        const user={name, email,password}
+        console.log(user)
+        // signup
+        signUpUser(email, password)
+        .then(result=>{
+            const user=result.user;
+            console.log(user)
+            navigate('/login')
+        })
+        .then(error=>{
+            console.log(error)
+        })
+    }
+
     return (
         <div>
             <div className="grid grid-cols-3 gap-2">
@@ -59,7 +86,7 @@ const RegisterPage = () => {
                 </div>
                 {/* Login right */}
                 <div className=" flex justify-center h-screen items-center col-span-3 md:col-span-2">
-                    <form>
+                    <form onSubmit={handleRegister}>
                         <h4 className="font-fontAb font-semibold text-5xl">Register</h4>
                         {/* name */}
                         <div className="flex pt-4 flex-col gap-4">
@@ -74,7 +101,7 @@ const RegisterPage = () => {
                         {/* password */}
                         <div className="flex pt-5 flex-col gap-4">
                             <label className="text-xl font-fontAb font-semibold">Password</label>
-                            <input type="password" name="email" className="border border-b-slate-400 w-full md:w-[400px] p-4 font-fontAb font-medium" required placeholder="Enter your password?" />
+                            <input type="password" name="password" className="border border-b-slate-400 w-full md:w-[400px] p-4 font-fontAb font-medium" required placeholder="Enter your password?" />
                         </div>
                         {/* btn */}
                         <div className="pt-6">

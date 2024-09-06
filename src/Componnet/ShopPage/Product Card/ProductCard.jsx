@@ -8,6 +8,9 @@ import Swal from "sweetalert2";
 const ProductCard = ({ item }) => {
     //
     const { name, img, price } = item;
+    // user cheek
+    
+
     //add item
     const dispatch = useDispatch();
     const handleAdd = item => {

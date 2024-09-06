@@ -9,12 +9,7 @@ const CartPage = () => {
     const total = cart.reduce((sum, totals) => totals.price + sum, 0)
     // delete
     const dispatch= useDispatch();
-    // delete
-    const handledelete=id=>{
-        console.log(id)
-        dispatch(deleteItem(id))
-    }
-
+    
     return (
         <div className="container mx-auto py-16">
             <h4 className="text-3xl font-medium font-fontAb">Cart Page: {cart.length}</h4>
@@ -43,7 +38,7 @@ const CartPage = () => {
                             {
                                 cart.map((item) => <tr key={item.id}>
                                     <th>
-                                        <button onClick={()=>handledelete(item.id)}>
+                                        <button onClick={()=>dispatch(deleteItem({id: item.id}))}>
                                             X
                                         </button>
                                     </th>
