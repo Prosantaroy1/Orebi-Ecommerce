@@ -1,7 +1,7 @@
 [
     {
         "id": 201,
-        "img": "./img/imprimante1.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpUCynBvWwiXo9Gq51AMbvcr2jJeP4YRnsQSTI",
         "category": "imprimante",
         "price": 35.00,
         "color": "Blank and White",
@@ -11,7 +11,7 @@
       },
       {
         "id": 202,
-        "img": "./img/imprimante2.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "imprimante",
         "price": 180.00,
         "color": "Gray",
@@ -21,7 +21,7 @@
       },
       {
         "id": 203,
-        "img": "./img/imprimante3.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp2C6Gwr8BhknTNw8l9AfgXdz1FUo7jDOMmsbc",
         "category": "imprimante",
         "price": 25.00,
         "color": "Mixed",
@@ -31,7 +31,7 @@
       },
       {
         "id": 204,
-        "img": "./img/imprimante4.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hpvk6xhQVF2qo76hQfM5jCJi4dGzVpNO0uLslk",
         "category": "imprimante",
         "price": 220.00,
         "color": "Black",
@@ -41,7 +41,7 @@
       },
       {
         "id": 205,
-        "img": "./img/imprimante7.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp9aFA6arRomMBHdU9FQ3YcgTjyzf87n4AuV6X",
         "category": "imprimante",
         "price": 25.00,
         "color": "Mixed",
@@ -51,7 +51,7 @@
       },
       {
         "id": 206,
-        "img": "./img/imprimante9.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpNyhMtrGgunSjwxcUv8EObpat1f0eMFrN64ZQ",
         "category": "imprimante",
         "price": 220.00,
         "color": "Black",
@@ -61,7 +61,7 @@
       },
       {
         "id": 207,
-        "img": "./img/imprimante6.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp5AgE95hybNGLxuoIf1zPY2jaDdXFqAKE7Rlt",
         "category": "imprimante",
         "price": 25.00,
         "color": "Mixed",
@@ -71,7 +71,7 @@
       },
       {
         "id": 208,
-        "img": "./img/imprimante8.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "imprimante",
         "price": 220.00,
         "color": "Black",
@@ -81,7 +81,7 @@
       },
       {
         "id": 209,
-        "img": "./img/encre1.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpBOCzaQsmQu9fv0ad8BsHwplN24hLjCAoMeFK",
         "category": "encre",
         "price": 25.00,
         "color": "Mixed",
@@ -91,7 +91,7 @@
       },
       {
         "id": 210,
-        "img": "./img/encre2.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp7fYb7UqJhv5gQp2TXKijLHz1FtaRrnNMPcu6",
         "category": "encre",
         "price": 220.00,
         "color": "Black",
@@ -101,7 +101,7 @@
       },
       {
         "id": 211,
-        "img": "./img/encre3.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp7fYb7UqJhv5gQp2TXKijLHz1FtaRrnNMPcu6",
         "category": "encre",
         "price": 25.00,
         "color": "Mixed",
@@ -111,7 +111,7 @@
       },
       {
         "id": 212,
-        "img": "./img/encre4.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp7fYb7UqJhv5gQp2TXKijLHz1FtaRrnNMPcu6",
         "category": "encre",
         "price":220.00,
         "color": "Black",
@@ -121,7 +121,7 @@
       },
       {
         "id": 213,
-        "img": "./img/ruban1.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp7fYb7UqJhv5gQp2TXKijLHz1FtaRrnNMPcu6",
         "category": "Ruban",
         "price": 25.00,
         "color": "Mixed",
@@ -131,7 +131,7 @@
       },
       {
         "id": 214,
-        "img": "./img/ruban2.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpUqcA2ZGWwiXo9Gq51AMbvcr2jJeP4YRnsQST",
         "category": "Ruban",
         "price": 220.00,
         "color": "Black",
@@ -141,7 +141,7 @@
       },
       {
         "id": 215,
-        "img": "./img/ruban3.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpqnBCaD9u7lJtsqbVQ4vSBhWNXr0RMaiznPgZ",
         "category": "Ruban",
         "price": 25.00,
         "color": "Mixed",
@@ -151,7 +151,7 @@
       },
       {
         "id": 216,
-        "img": "./img/ruban1.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpJKpSzFY3WaKTs0weLfHIYJ6ybd25UxG1PrhZ",
         "category": "Ruban",
         "price": 220.00,
         "color": "Black",
@@ -161,7 +161,7 @@
       },
       {
         "id": 217,
-        "img": "./img/bac1.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpUqcA2ZGWwiXo9Gq51AMbvcr2jJeP4YRnsQST",
         "category": "Bac de dechet",
         "price": 25.00,
         "color": "Mixed",
@@ -171,7 +171,7 @@
       },
       {
         "id": 219,
-        "img": "./img/bac2.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1HpEbblt5q26gpSIGKN4fybJc7nutwUqjvesBDQ",
         "category": "Bac de dechet",
         "price": 220.00,
         "color": "Black",
@@ -181,7 +181,7 @@
       },
       {
         "id": 220,
-        "img": "./img/bac3.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "Bac de dechet",
         "price": 25.00,
         "color": "Mixed",
@@ -191,7 +191,7 @@
       },
       {
         "id": 221,
-        "img": "./img/bac2.png",
+        "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "Bac de dechet",
         "price": 220.00,
         "color": "Black",

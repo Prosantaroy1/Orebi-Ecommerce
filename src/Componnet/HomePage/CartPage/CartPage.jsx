@@ -53,7 +53,7 @@ const CartPage = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <div className="font-bold">{item.name}</div>
+                                    <td className="font-bold">{item.name}</td>
                                     <td>
                                         ${item.price}
                                     </td>

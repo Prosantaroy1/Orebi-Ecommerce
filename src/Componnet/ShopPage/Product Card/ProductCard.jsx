@@ -6,15 +6,15 @@ import { addItem } from "../../../redux/cartSlice";
 import Swal from "sweetalert2";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
     //
-    const { name, img, price } = item;
+    const { name, img, price, id } = item;
     // user cheek
     const { user } = useContext(AuthContext);
     // 
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     //add item
     const dispatch = useDispatch();
     const handleAdd = item => {
@@ -28,21 +28,23 @@ const ProductCard = ({ item }) => {
                 timer: 1500
             });
         }
-        else{
+        else {
             Swal.fire({
-                title: "Product add To Before Login?",      
+                title: "Product add To Before Login?",
                 icon: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#3085d6",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "Login"
-              }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                  navigate('/login')
+                    navigate('/login')
                 }
-              });
+            });
         }
     }
+    // product details
+
 
     return (
         <div>
@@ -70,9 +72,11 @@ const ProductCard = ({ item }) => {
                         <button className="btn hover:bg-black hover:text-white">
                             <BiSolidHeartCircle className="lg:text-3xl text-xl" />
                         </button>
-                        <button className="btn hover:bg-black hover:text-white">
-                            <TbListDetails className="lg:text-3xl text-xl" />
-                        </button>
+                        <Link to={`/product/${id}`}>
+                            <button className="btn hover:bg-black hover:text-white">
+                                <TbListDetails className="lg:text-3xl text-xl" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

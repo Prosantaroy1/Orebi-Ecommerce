@@ -10,6 +10,7 @@ import LoginPage from "../Componnet/LoginPage/LoginPage";
 import RegisterPage from "../Componnet/RegisterPage/RegisterPage";
 import CartPage from "../Componnet/HomePage/CartPage/CartPage";
 import ProcessCheek from "../Componnet/HomePage/Process CheekOut/ProcessCheek";
+import ProductDetails from "../Componnet/HomePage/Product Details/ProductDetails";
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
             {
                 path: '/cheekout',
                 element:<ProcessCheek/>
+            },
+            {
+                path: '/product/:id',
+                element: <ProductDetails/>,
+                loader: () =>fetch('product.json')
             }
 
         ]
