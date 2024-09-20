@@ -4,7 +4,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1HpUCynBvWwiXo9Gq51AMbvcr2jJeP4YRnsQSTI",
         "category": "imprimante",
         "price": 35.00,
-        "color": "Blank and White",
+        "color": "red",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "imprimante product"
@@ -14,7 +14,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "imprimante",
         "price": 180.00,
-        "color": "Gray",
+        "color": "red",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "imprimante Two"
@@ -34,7 +34,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1Hpvk6xhQVF2qo76hQfM5jCJi4dGzVpNO0uLslk",
         "category": "imprimante",
         "price": 220.00,
-        "color": "Black",
+        "color": "red",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "Missin Product"
@@ -64,7 +64,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1Hp5AgE95hybNGLxuoIf1zPY2jaDdXFqAKE7Rlt",
         "category": "imprimante",
         "price": 25.00,
-        "color": "Mixed",
+        "color": "white",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "imprimante Brand"
@@ -74,7 +74,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "imprimante",
         "price": 220.00,
-        "color": "Black",
+        "color": "white",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "New imprimante"
@@ -93,7 +93,7 @@
         "id": 210,
         "img": "https://utfs.io/f/KlyXoI2wU1Hp7fYb7UqJhv5gQp2TXKijLHz1FtaRrnNMPcu6",
         "category": "encre",
-        "price": 220.00,
+        "price": 90.00,
         "color": "Black",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -134,7 +134,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1HpUqcA2ZGWwiXo9Gq51AMbvcr2jJeP4YRnsQST",
         "category": "Ruban",
         "price": 220.00,
-        "color": "Black",
+        "color": "red",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "Ruban Product"
@@ -143,7 +143,7 @@
         "id": 215,
         "img": "https://utfs.io/f/KlyXoI2wU1HpqnBCaD9u7lJtsqbVQ4vSBhWNXr0RMaiznPgZ",
         "category": "Ruban",
-        "price": 25.00,
+        "price": 80.00,
         "color": "Mixed",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -194,7 +194,7 @@
         "img": "https://utfs.io/f/KlyXoI2wU1Hp8xSgwqbIU9QSDXJZ2oy5wduzL40YRTMajWnH",
         "category": "Bac de dechet",
         "price": 220.00,
-        "color": "Black",
+        "color": "red",
         "badge": true,
         "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
         "name": "Bac Product"
